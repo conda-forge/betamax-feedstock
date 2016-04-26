@@ -1,4 +1,4 @@
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 
 package:
     name: betamax
@@ -7,7 +7,7 @@ package:
 source:
     fn: betamax-{{ version }}.tar.gz
     url: https://pypi.python.org/packages/source/b/betamax/betamax-{{ version }}.tar.gz
-    md5: 349e69e1a9da664a8ab8c0f545e2e38f
+    md5: f70c210d760f5962c03d83eca4ec18ea
 
 build:
     number: 0
