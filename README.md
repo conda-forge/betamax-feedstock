@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/betamax-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/betamax-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/betamax-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/betamax-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/betamax-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/betamax-feedstock/branch/master)
