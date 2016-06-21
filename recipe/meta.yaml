@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 package:
     name: betamax
@@ -6,8 +6,8 @@ package:
 
 source:
     fn: betamax-{{ version }}.tar.gz
-    url: https://pypi.io/packages/source/b/betamax/betamax-{{ version }}.tar.gz
-    md5: ddb657a6e546c1aeec403b499f31ff44
+    url: https://github.com/sigmavirus24/betamax/archive/{{ version }}.tar.gz
+    sha256: a128d61905a2e50bd6f2a38b9154ed0e4111f50a156bc25faec61b077f748fdf
 
 build:
     number: 0
@@ -30,7 +30,7 @@ test:
 
 about:
     home: https://github.com/sigmavirus24/betamax
-    license: Apache
+    license: Apache-2.0
     summary: A VCR imitation for python-requests
 
 extra:
