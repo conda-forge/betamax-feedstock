@@ -1,4 +1,4 @@
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 
 package:
     name: betamax
@@ -7,7 +7,7 @@ package:
 source:
     fn: betamax-{{ version }}.tar.gz
     url: https://github.com/sigmavirus24/betamax/archive/{{ version }}.tar.gz
-    sha256: a128d61905a2e50bd6f2a38b9154ed0e4111f50a156bc25faec61b077f748fdf
+    sha256: 3f00bd14fcdad085c16c8c483a367267ef8b94dacc1f905a206c5ad1741800ca
 
 build:
     number: 0
@@ -31,7 +31,7 @@ test:
 about:
     home: https://github.com/sigmavirus24/betamax
     license: Apache-2.0
-    summary: A VCR imitation for python-requests
+    summary: 'A VCR imitation for python-requests.'
 
 extra:
     recipe-maintainers:
