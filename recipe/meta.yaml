@@ -1,4 +1,4 @@
-{% set version = "0.7.2" %}
+{% set version = "0.8.0" %}
 
 package:
     name: betamax
@@ -7,7 +7,7 @@ package:
 source:
     fn: betamax-{{ version }}.tar.gz
     url: https://github.com/sigmavirus24/betamax/archive/{{ version }}.tar.gz
-    sha256: 3f00bd14fcdad085c16c8c483a367267ef8b94dacc1f905a206c5ad1741800ca
+    sha256: 2304f2c772c111425592fd325fe26c3f23afdea0e8a286d6be23bfcb71fc35e2
 
 build:
     number: 0
