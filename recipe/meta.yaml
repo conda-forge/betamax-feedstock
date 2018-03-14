@@ -1,39 +1,38 @@
 {% set version = "0.8.1" %}
 
 package:
-    name: betamax
-    version: {{ version }}
+  name: betamax
+  version: {{ version }}
 
 source:
-    fn: betamax-{{ version }}.tar.gz
-    url: https://github.com/sigmavirus24/betamax/archive/{{ version }}.tar.gz
-    sha256: 69b4e14e36273211e5a392da5c9ed572dd8b0c446b35204f57dca81765ed2fc1
+  url: https://github.com/sigmavirus24/betamax/archive/{{ version }}.tar.gz
+  sha256: 69b4e14e36273211e5a392da5c9ed572dd8b0c446b35204f57dca81765ed2fc1
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
-        - requests >=2.0
+  build:
+    - python
+    - pip
+  run:
+    - python
+    - requests >=2.0
 
 test:
-    imports:
-        - betamax
-        - betamax.cassette
-        - betamax.matchers
-        - betamax.serializers
+  imports:
+    - betamax
+    - betamax.cassette
+    - betamax.matchers
+    - betamax.serializers
 
 about:
-    home: https://github.com/sigmavirus24/betamax
-    license: Apache-2.0
-    summary: 'A VCR imitation for python-requests.'
+  home: https://github.com/sigmavirus24/betamax
+  license: Apache-2.0
+  summary: 'A VCR imitation for python-requests.'
 
 extra:
-    recipe-maintainers:
-        - ocefpaf
-        - sigmavirus24
+  recipe-maintainers:
+    - ocefpaf
+    - sigmavirus24
